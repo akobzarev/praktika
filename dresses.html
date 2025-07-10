@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrendStyle — Одежда</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+    .product {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .product img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-title {
+      font-size: 18px;
+      margin: 0 0 10px;
+      color: #111;
+    }
+    .product-price {
+      font-weight: bold;
+      color: #e63946;
+      font-size: 16px;
+      margin-bottom: 10px;
+}
+    .btn-buy {
+      background-color: #e63946;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TrendStyle</h1>
+    <p>Интернет-магазин одежды и обуви</p>
+  </header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="fclothing.html" style="text-decoration: underline;">Одежда</a>
+    <a href="fshoes.html">Обувь</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <main>
+    <h2>Платья</h2>
+    <div class="products">
+      <article class="product">
+        <img src="https://static.rendez-vous.ru/files/catalog_images/resize_640x630/4/4344586_plat_e_maison_david_s_002_bezhevyy_poliester_2.jpg" alt="Женское вечернее платье MAISON DAVID" />
+        <div class="product-info">
+          <h3 class="product-title">Женское вечернее платье MAISON DAVID</h3>
+	<div class="product-price">7 370 ₽</div>
+	<button class="btn-buy">Купить</button>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://static.rendez-vous.ru/files/catalog_models/resize_640x630/4/4525532_plat_ya_maison_david_2024_538_temno_korichnevyy_hlopok.jpg" alt="Женское вечернее платье MAISON DAVID" />
+        <div class="product-info">
+          <h3 class="product-title">Женское вечернее платье MAISON DAVID</h3>
+	<div class="product-price">5 640 ₽</div>
+	<button class="btn-buy">Купить</button>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://static.rendez-vous.ru/files/catalog_images/resize_640x630/4/4344543_plat_e_maison_david_s_005s_chernyy_shelk_2.jpg" alt="Женское вечернее платье MAISON DAVID" />
+        <div class="product-info">
+          <h3 class="product-title">Женское вечернее платье MAISON DAVID</h3>
+          <div class="product-price">5 999 ₽</div>
+	<button class="btn-buy">Купить</button>
+        </div>
+      </article>
+ </article>
+    </div>
+ </section>
+    <section id="contacts" style="margin-top: 50px; margin-bottom: 50px;">
+      <h2>Контакты</h2>
+      <p>Телефон: +7 (123) 456-78-90</p>
+      <p>Email: info@trendstyle.ru</p>
+      <p>Адрес: г. Белгород, ул. Примерная, д. 10</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 TrendStyle. Все права защищены.
+  </footer>
+</body>
+</html>
